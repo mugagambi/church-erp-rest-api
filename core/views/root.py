@@ -6,4 +6,5 @@ from rest_framework.reverse import reverse
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
+        'news': reverse('news_list', request=request, format=format),
     })
