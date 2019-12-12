@@ -8,4 +8,5 @@ def api_root(request, format=None):
     return Response({
         'News': reverse('news_list', request=request, format=format),
         'Order Of Service': reverse('order_of_service', request=request, format=format),
+        'Sermons': reverse('sermon_list', request=request, format=format),
     })
